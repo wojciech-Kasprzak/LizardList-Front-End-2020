@@ -1,0 +1,26 @@
+.input {
+    &__item {
+    }
+    &__label {
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin-bottom: 4%;
+    }
+    &__input {
+        background: $gray;
+        outline: none;
+        border: none;
+        height: 40px;
+        width: 100%;
+        border-radius: 25px;
+        padding: 0 15px;
+        font-size: 1rem;
+        &::placeholder {
+            font-size: 1rem;
+            column-count: $darkGray;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}

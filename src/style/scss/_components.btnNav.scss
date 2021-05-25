@@ -1,0 +1,85 @@
+.btnNav {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 5%;
+  &--firstRow {
+    bottom: 8%;
+  }
+  &__item {
+    max-width: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 13px 0;
+    border-radius: 30px;
+
+    &--marginRight {
+      margin-right: 15px;
+    }
+    &--green {
+      background: $lightGreen;
+    }
+    &--gray {
+      background: $cancel;
+    }
+    &--height {
+      height: 42px;
+    }
+    &--width {
+      width: 80px;
+    }
+    &--disable {
+      pointer-events: none;
+      opacity: .5;
+    }
+  }
+  &__text {
+    color: #fff;
+  }
+  &__add {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    opacity: 1;
+
+    &:before {
+      transform: rotate(90deg);
+      position: absolute;
+      left: 20px;
+      content: " ";
+      height: 20px;
+      width: 2px;
+      background-color: #fff;
+    }
+    &:after {
+      transform: rotate(180deg);
+      position: absolute;
+      left: 20px;
+      content: " ";
+      height: 20px;
+      width: 2px;
+      background-color: #fff;
+    }
+  }
+  &__remove {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    opacity: 1;
+
+    &:before {
+      transform: rotate(90deg);
+      position: absolute;
+      left: 20px;
+      content: " ";
+      height: 20px;
+      width: 2px;
+      background-color: #fff;
+    }
+  }
+}

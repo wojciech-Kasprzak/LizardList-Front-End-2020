@@ -1,0 +1,10 @@
+.margin {
+  &__none {
+    &--bottom {
+      margin-bottom: 0!important;
+    }
+  }
+  &__10 {
+    margin-bottom: 10%;
+  }
+}
